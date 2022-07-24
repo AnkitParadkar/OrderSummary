@@ -1,0 +1,132 @@
+
+:root{
+    --pale-blue:hsla(225, 100%, 93%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: "",sans-serif;
+    background-color:rgb(188, 202, 227);
+    text-align:center;
+}
+p{
+    font-size: 16px;
+    line-height: 1.6;
+    color:hsl(224,23%,55%);
+}
+ .bg__image{
+    background: url("./pattern-background-mobile.svg")
+    no-repeat
+    center/cover;
+    height: 400px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}   
+  .btn{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+  }
+  .btn-change{
+    background-color: transparent;
+    color: #327cb0;
+    text-decoration: underline;
+
+  }
+
+  .btn-primary{
+    background-color: #3d36d3;
+    color: white; 
+    padding: 10px;  
+    margin-bottom: 10px;
+  }
+  .btn-primary:hover,
+  .btn-change:hover {
+    opacity:o.8;
+  }
+  .btn-secondary{
+    background-color: transparent;
+    color:hsl(224,23%,55%);
+  }
+    .btn-secondary:hover {
+       color:hsl(223, 47%, 23%)
+    }
+
+  
+.container{
+    background-color:white;
+    margin: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px hsl(226, 27%, 10%)
+}
+.contianer h1{
+    color:	hsl(223, 47%, 23%);
+    margin: 10px 0;
+}
+.container img.hero {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.container .pricing {
+    margin: 30px auto;
+    padding: 10px;
+    background-color: hsl(225,100%,98%);
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.container .pricing article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container.pricing article img{
+    margin-right: 10px;
+}
+.container .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Attribution */
+.attribution { font-size: 15px;
+    text-align: center;
+
+}
+.attribution h3{
+    color:hsl(228, 45%, 44%);
+
+}
+
+@media (min-width: 768px) {
+    .bg__image{
+        background: url("./pattern-background-desktop.svg")
+        no-repeat center/
+        cover;
+        height: 50vh;
+
+    }
+    
+}
